@@ -1,0 +1,37 @@
+{
+  "name": "bsuir-schedule",
+  "version": "1.0.0",
+  "description": "BSUIR schedule parser",
+  "main": "lib/BSUIRSchedule.js",
+  "scripts": {
+    "test": "mocha",
+    "nyan-test": "mocha --reporter nyan",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitrixhater/bsuir-schedule.git"
+  },
+  "keywords": [
+    "BSUIR",
+    "JSON",
+    "Schedule",
+    "Parser"
+  ],
+  "author": "bitrixhater",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitrixhater/bsuir-schedule/issues"
+  },
+  "homepage": "https://github.com/bitrixhater/bsuir-schedule#readme",
+  "dependencies": {
+    "cheerio": "latest",
+    "mongoose": "latest",
+    "tiny_request": "latest"
+  },
+  "devDependencies": {
+    "jsdoc": "latest",
+    "minami": "latest",
+    "mocha": "latest"
+  }
+}
