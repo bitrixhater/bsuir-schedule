@@ -59,17 +59,17 @@ const BSUIR = new require('bsuir-schedule').BSUIRSchedule(
 > от всех недопониманий можно избавиться заглянув в исходники
 
 Конструктор класса `BSUIRSchedule` принимает объект с настройками:
- Опция | Тип | Описание
----|---|---
-requester | BaseRequester | Экземпляр класса для обработки запросов на сайт БГУИРа, наследуется от `BaseRequester`. По умолчанию используется `TinyRequest`, основанный на [`tiny_request`](https://github.com/Naltox/tiny_request)
-cacheManager | BaseCacheManager | Экземпляр класса для управления кешом, наследуется от `BaseCacheManager`
-cacheManagerConfig | Object | Объект с параметрами для кеш-менеджера по умолчанию
-groupsCacheTime | Number | Время жизни кеша для списка групп в секундах
-groupsRequestParams | Object | Параметры для `requester`
-teachersCacheTime | Number | Время жизни кеша для списка преподавателей в секундах
-teachersRequestParams | Object | Параметры для `requester`
-scheduleCacheTime | Number | Время жизни кеша для страницы расписания в секундах
-scheduleRequestParams | Objec | Параметры для `requester`
+|Опция|Тип|Описание|
+|---|---|---|
+|requester | BaseRequester | Экземпляр класса для обработки запросов на сайт БГУИРа, наследуется от `BaseRequester`. По умолчанию используется `TinyRequest`, основанный на [`tiny_request`](https://github.com/Naltox/tiny_request)|
+|cacheManager | BaseCacheManager | Экземпляр класса для управления кешом, наследуется от `BaseCacheManager`|
+|cacheManagerConfig | Object | Объект с параметрами для кеш-менеджера по умолчанию|
+|groupsCacheTime | Number | Время жизни кеша для списка групп в секундах|
+|groupsRequestParams | Object | Параметры для `requester`|
+|teachersCacheTime | Number | Время жизни кеша для списка| преподавателей в секундах|
+|teachersRequestParams | Object | Параметры для `requeste|r`|
+|scheduleCacheTime | Number | Время жизни кеша для страни|цы| расписания в секундах|
+|scheduleRequestParams | Objec | Параметры для `requester`|
 
 > `require('bsuir-schedule').BaseRequester` и `require('bsuir-schedule').BaseCacheManager`
 
