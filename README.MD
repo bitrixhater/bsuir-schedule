@@ -22,20 +22,22 @@ $ npm test
 # Использование
 
 ```JavaScript
-const BSUIR = new require('bsuir-schedule').BSUIRSchedule(/*CONFIG*/)
+const BSUIR = new (require('bsuir-schedule').BSUIRSchedule)()
+
+console.log()
 
 // Список преподавателей
 BSUIR.teachers()
 .then(console.log)
-
+ 
 // Список групп
-() => BSUIR.groups()
+BSUIR.groups()
 .then(console.log)
-
+ 
 // Расписание для преподавателя
 BSUIR.schedule('https://www.bsuir.by/schedule/scheduleEmployee.xhtml?id=500689')
 .then(console.log)
-
+ 
 //Расписание для группы
 BSUIR.schedule('https://www.bsuir.by/schedule/schedule.xhtml?id=303942')
 .then(console.log)
